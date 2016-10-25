@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <script>
+        var room = '<%= title %>';
+    </script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="/javascripts/game.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body class="game">
+    <div id="finish" class="checkerboard" style="visibility: hidden"></div>
+    <div id="screen">
+        <div id="center-text">
+            <h1 id="game-text"></h1>
+        </div>
+        <ul id="race">
+        </ul>
+    </div>
+</body>
+</html>
